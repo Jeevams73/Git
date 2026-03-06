@@ -1,0 +1,20 @@
+#!/bin/bash
+num1=10
+num2=5
+
+#Arithmetic Expansion ($((...)))
+
+result=$((num1 + num2))
+echo "Sum: $result"
+
+#Using expr Command
+
+sum=$(expr $num1 + $num2)
+echo "Sum: $sum"
+
+#Using let Command
+
+let "sum = num1 + num2"
+echo "Sum: $sum"
+
+
